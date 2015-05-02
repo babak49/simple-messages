@@ -9,23 +9,14 @@ Package.describe({
 Package.onUse(function(api) {
   api.versionsFrom('0.9.0');
   api.addFiles([
-      'client/simple-messages.coffee',
-      'client/simple-messages.jade'
-  ]);
+    'client/simple-messages.coffee',
+    'client/simple-messages.jade'
+  ], 'client');
 
   api.use([
     'templating',
-    'handlebars',
     'jquery',
     'coffeescript',
     'mquandalle:jade'
   ], 'client');
-});
-
-Package.onTest(function(api) {
-  api.use([
-      'tinytest',
-      'test-helpers'
-  ]);
-  api.addFiles('tests/simple-messages-tests.js');
 });
