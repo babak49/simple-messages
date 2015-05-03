@@ -1,0 +1,17 @@
+<template name="simpleMessage">
+    <div id="simpleMessage"></div>
+</template>
+
+<template name="message">
+    <div class="alert {{type}}">
+        {{#if isClosable}}
+            <button class="close" type="button" data-dismiss="alert" aria-hidden="true">
+            	&times;
+        	</button>
+    	{{/if}}
+        {{#if title}}
+            <strong>{{title}}</strong>
+    	{{/if}}
+        {{{body}}}
+    </div>
+</template>

@@ -8,15 +8,15 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('0.9.0');
-  api.addFiles([
-    'client/simple-messages.coffee',
-    'client/simple-messages.jade'
-  ], 'client');
 
   api.use([
     'templating',
     'jquery',
-    'coffeescript',
-    'mquandalle:jade'
+    'coffeescript'
+  ], 'client');
+
+  api.addFiles([
+    'client/simple-messages.coffee',
+    'client/simple-messages.html'
   ], 'client');
 });
