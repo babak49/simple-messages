@@ -23,7 +23,7 @@ If you want to change default behavior you should create variable with instance 
 
 Include the template somewhere in your template:
 ```javascript
-  {{> simpleMessages}}
+  {{> simpleMessage}}
 ```
 
 Then trigger from javascript. You can send plain text or html
